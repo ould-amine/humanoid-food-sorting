@@ -1,0 +1,8 @@
+# Keep Colab's preinstalled CUDA torch/torchvision and NumPy.
+# Use modern tokenizers binaries on newer Colab Python runtimes.
+--only-binary=tokenizers
+transformers==4.57.6
+ftfy
+regex
+tqdm
+git+https://github.com/openai/CLIP.git

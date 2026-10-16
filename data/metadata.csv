@@ -1,0 +1,59 @@
+video_id,video_path,food_name,category,target_id,instruction,split,session_id,object_id,eval_group
+banana_01,videos/banana_01.mov,banana,fruit,fruit_basket,Sort the banana into its category basket.,test,3,banana,seen
+banana_02,videos/banana_02.mov,banana,fruit,fruit_basket,Sort the banana into its category basket.,train,1,banana,seen
+banana_03,videos/banana_03.mov,banana,fruit,fruit_basket,Sort the banana into its category basket.,train,1,banana,seen
+banana_04,videos/banana_04.mov,banana,fruit,fruit_basket,Sort the banana into its category basket.,val,2,banana,seen
+carrot_01,videos/carrot_01.mov,carrot,vegetable,vegetable_basket,Sort the carrot into its category basket.,train,1,carrot,seen
+carrot_02,videos/carrot_02.mov,carrot,vegetable,vegetable_basket,Sort the carrot into its category basket.,train,1,carrot,seen
+carrot_03,videos/carrot_03.mov,carrot,vegetable,vegetable_basket,Sort the carrot into its category basket.,test,3,carrot,seen
+carrot_04,videos/carrot_04.mov,carrot,vegetable,vegetable_basket,Sort the carrot into its category basket.,val,2,carrot,seen
+eggplant_01,videos/eggplant_01.mov,eggplant,vegetable,vegetable_basket,Sort the eggplant into its category basket.,val,2,eggplant,seen
+eggplant_02,videos/eggplant_02.mov,eggplant,vegetable,vegetable_basket,Sort the eggplant into its category basket.,train,1,eggplant,seen
+eggplant_03,videos/eggplant_03.mov,eggplant,vegetable,vegetable_basket,Sort the eggplant into its category basket.,train,1,eggplant,seen
+eggplant_04,videos/eggplant_04.mov,eggplant,vegetable,vegetable_basket,Sort the eggplant into its category basket.,train,1,eggplant,seen
+eggplant_05,videos/eggplant_05.mov,eggplant,vegetable,vegetable_basket,Sort the eggplant into its category basket.,val,2,eggplant,seen
+eggplant_06,videos/eggplant_06.mov,eggplant,vegetable,vegetable_basket,Sort the eggplant into its category basket.,val,2,eggplant,seen
+fennel_01,videos/fennel_01.mov,fennel,vegetable,vegetable_basket,Sort the fennel into its category basket.,train,1,fennel,seen
+fennel_02,videos/fennel_02.mov,fennel,vegetable,vegetable_basket,Sort the fennel into its category basket.,train,1,fennel,seen
+fennel_03,videos/fennel_03.mov,fennel,vegetable,vegetable_basket,Sort the fennel into its category basket.,val,2,fennel,seen
+fennel_04,videos/fennel_04.mov,fennel,vegetable,vegetable_basket,Sort the fennel into its category basket.,train,1,fennel,seen
+fennel_05,videos/fennel_05.mov,fennel,vegetable,vegetable_basket,Sort the fennel into its category basket.,train,1,fennel,seen
+fennel_06,videos/fennel_06.mov,fennel,vegetable,vegetable_basket,Sort the fennel into its category basket.,train,1,fennel,seen
+grapes_01,videos/grapes_01.mov,grapes,fruit,fruit_basket,Sort the grapes into its category basket.,train,1,grapes,seen
+grapes_02,videos/grapes_02.mov,grapes,fruit,fruit_basket,Sort the grapes into its category basket.,train,1,grapes,seen
+grapes_03,videos/grapes_03.mov,grapes,fruit,fruit_basket,Sort the grapes into its category basket.,train,1,grapes,seen
+grapes_04,videos/grapes_04.mov,grapes,fruit,fruit_basket,Sort the grapes into its category basket.,val,2,grapes,seen
+grapes_05,videos/grapes_05.mov,grapes,fruit,fruit_basket,Sort the grapes into its category basket.,test,3,grapes,seen
+green_apple_01,videos/green_apple_01.mov,green_apple,fruit,fruit_basket,Sort the green apple into its category basket.,test,3,green_apple,seen
+green_apple_02,videos/green_apple_02.mov,green_apple,fruit,fruit_basket,Sort the green apple into its category basket.,train,1,green_apple,seen
+green_apple_03,videos/green_apple_03.mov,green_apple,fruit,fruit_basket,Sort the green apple into its category basket.,val,2,green_apple,seen
+green_pepper_01,videos/green_pepper_01.mov,green_pepper,vegetable,vegetable_basket,Sort the green pepper into its category basket.,train,1,green_pepper,seen
+green_pepper_02,videos/green_pepper_02.mov,green_pepper,vegetable,vegetable_basket,Sort the green pepper into its category basket.,val,2,green_pepper,seen
+kiwi_01,videos/kiwi_01.mov,kiwi,fruit,fruit_basket,Sort the kiwi into its category basket.,val,2,kiwi,seen
+kiwi_02,videos/kiwi_02.mov,kiwi,fruit,fruit_basket,Sort the kiwi into its category basket.,val,2,kiwi,seen
+kiwi_03,videos/kiwi_03.mov,kiwi,fruit,fruit_basket,Sort the kiwi into its category basket.,train,1,kiwi,seen
+kiwi_04,videos/kiwi_04.mov,kiwi,fruit,fruit_basket,Sort the kiwi into its category basket.,test,3,kiwi,seen
+kiwi_05,videos/kiwi_05.mov,kiwi,fruit,fruit_basket,Sort the kiwi into its category basket.,test,3,kiwi,seen
+kiwi_06,videos/kiwi_06.mov,kiwi,fruit,fruit_basket,Sort the kiwi into its category basket.,train,1,kiwi,seen
+mango_01,videos/mango_01.mov,mango,fruit,fruit_basket,Sort the mango into its category basket.,test,3,mango,seen
+mango_02,videos/mango_02.mov,mango,fruit,fruit_basket,Sort the mango into its category basket.,train,1,mango,seen
+mango_03,videos/mango_03.mov,mango,fruit,fruit_basket,Sort the mango into its category basket.,val,2,mango,seen
+pear_01,videos/pear_01.mov,pear,fruit,fruit_basket,Sort the pear into its category basket.,train,1,pear,seen
+pear_02,videos/pear_02.mov,pear,fruit,fruit_basket,Sort the pear into its category basket.,train,1,pear,seen
+pear_03,videos/pear_03.mov,pear,fruit,fruit_basket,Sort the pear into its category basket.,test,3,pear,seen
+pear_04,videos/pear_04.mov,pear,fruit,fruit_basket,Sort the pear into its category basket.,test,3,pear,seen
+pear_05,videos/pear_05.mov,pear,fruit,fruit_basket,Sort the pear into its category basket.,train,1,pear,seen
+pear_06,videos/pear_06.mov,pear,fruit,fruit_basket,Sort the pear into its category basket.,train,1,pear,seen
+red_apple_01,videos/red_apple_01.mov,red_apple,fruit,fruit_basket,Sort the red apple into its category basket.,test,3,red_apple,seen
+red_apple_02,videos/red_apple_02.mov,red_apple,fruit,fruit_basket,Sort the red apple into its category basket.,train,1,red_apple,seen
+red_pepper_01,videos/red_pepper_01.mov,red_pepper,vegetable,vegetable_basket,Sort the red pepper into its category basket.,test,3,red_pepper,unseen
+white_courgette_01,videos/white_courgette_01.mov,white_courgette,vegetable,vegetable_basket,Sort the white courgette into its category basket.,val,2,white_courgette,seen
+white_courgette_02,videos/white_courgette_02.mov,white_courgette,vegetable,vegetable_basket,Sort the white courgette into its category basket.,train,1,white_courgette,seen
+white_courgette_03,videos/white_courgette_03.mov,white_courgette,vegetable,vegetable_basket,Sort the white courgette into its category basket.,train,1,white_courgette,seen
+white_courgette_04,videos/white_courgette_04.mov,white_courgette,vegetable,vegetable_basket,Sort the white courgette into its category basket.,test,3,white_courgette,seen
+yellow_pepper_01,videos/yellow_pepper_01.mov,yellow_pepper,vegetable,vegetable_basket,Sort the yellow pepper into its category basket.,test,3,yellow_pepper,seen
+yellow_pepper_02,videos/yellow_pepper_02.mov,yellow_pepper,vegetable,vegetable_basket,Sort the yellow pepper into its category basket.,val,2,yellow_pepper,seen
+yellow_pepper_03,videos/yellow_pepper_03.mov,yellow_pepper,vegetable,vegetable_basket,Sort the yellow pepper into its category basket.,val,2,yellow_pepper,seen
+yellow_pepper_04,videos/yellow_pepper_04.mov,yellow_pepper,vegetable,vegetable_basket,Sort the yellow pepper into its category basket.,train,1,yellow_pepper,seen
+yellow_pepper_05,videos/yellow_pepper_05.mov,yellow_pepper,vegetable,vegetable_basket,Sort the yellow pepper into its category basket.,test,3,yellow_pepper,seen
+yellow_pepper_06,videos/yellow_pepper_06.mov,yellow_pepper,vegetable,vegetable_basket,Sort the yellow pepper into its category basket.,test,3,yellow_pepper,seen

@@ -1,0 +1,25 @@
+.venv/
+.libero/
+.cache/
+__pycache__/
+*.pyc
+outputs/
+data/frames/
+sorting_colab*.zip
+.DS_Store
+.venv-colab/
+artifacts/*.zip
+artifacts/archives/*.zip
+
+# Personal data and generated artifacts
+data/videos/
+data/crops/
+data/demos/
+results/
+datasets/
+artifacts/
+*.pt
+*.pth
+
+# External dependency
+LIBERO/

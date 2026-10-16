@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "status": "reference_configuration",
+  "category_order": [
+    "fruit",
+    "vegetable"
+  ],
+  "splits": {
+    "strategy": "recording session split, as recorded in data/metadata.csv",
+    "session_assignment": {
+      "1": "train",
+      "2": "val",
+      "3": "test"
+    },
+    "train_foods": [
+      "banana",
+      "carrot",
+      "eggplant",
+      "fennel",
+      "grapes",
+      "green_apple",
+      "green_pepper",
+      "kiwi",
+      "mango",
+      "pear",
+      "red_apple",
+      "white_courgette",
+      "yellow_pepper"
+    ],
+    "validation_foods": [
+      "banana",
+      "carrot",
+      "eggplant",
+      "fennel",
+      "grapes",
+      "green_apple",
+      "green_pepper",
+      "kiwi",
+      "mango",
+      "white_courgette",
+      "yellow_pepper"
+    ],
+    "test_foods": [
+      "banana",
+      "carrot",
+      "grapes",
+      "green_apple",
+      "kiwi",
+      "mango",
+      "pear",
+      "red_apple",
+      "red_pepper",
+      "white_courgette",
+      "yellow_pepper"
+    ],
+    "unseen_test_foods": [
+      "red_pepper"
+    ],
+    "eval_group_definition": "exact food_name present in train => seen, otherwise unseen",
+    "seen_test": "14 videos",
+    "validation": "15 videos; source split is defined in data/metadata.csv",
+    "object_id_semantics": "food type, as requested; may recur across splits",
+    "physical_instance_status": "not recorded; the same physical item could recur across sessions",
+    "unseen_limit": "red_pepper has one video and other pepper colours occur in train",
+    "session_overlap": "none",
+    "counts": {
+      "test": 15,
+      "train": 28,
+      "val": 15
+    }
+  },
+  "controller": {
+    "type": "OSC_POSE",
+    "control_hz": 20,
+    "position_scale_m": 0.05,
+    "rotation_scale_rad": 0.5,
+    "clearance_m": 0.12,
+    "max_steps": 800,
+    "position_source": "simulator_oracle",
+    "basket_layout": "randomized_and_swapped"
+  },
+  "methods": [
+    {
+      "id": "fixed_script",
+      "classifier": "constant_fruit",
+      "motion": "fixed",
+      "personal_data": false
+    },
+    {
+      "id": "clip_script",
+      "classifier": "clip_zero_shot",
+      "motion": "fixed",
+      "personal_data": false
+    },
+    {
+      "id": "dino_script",
+      "classifier": "dinov2_linear",
+      "motion": "fixed",
+      "personal_data": true
+    },
+    {
+      "id": "dino_human",
+      "classifier": "dinov2_linear",
+      "motion": "human_relative",
+      "personal_data": true
+    },
+    {
+      "id": "bc_fixed_demos",
+      "classifier": "dinov2_linear",
+      "motion": "bc",
+      "demo_source": "dino_script",
+      "personal_data": true
+    },
+    {
+      "id": "bc_human_demos",
+      "classifier": "dinov2_linear",
+      "motion": "bc",
+      "demo_source": "dino_human",
+      "personal_data": true
+    },
+    {
+      "id": "smolvla_finetuned",
+      "classifier": "dinov2_linear",
+      "motion": "smolvla",
+      "demo_source": "dino_human",
+      "personal_data": true,
+      "status": "adapter_only"
+    },
+    {
+      "id": "latent_world_model",
+      "source": "robot_episodes_and_human_provenance",
+      "action_conditioned": true,
+      "status": "model_definition_only",
+      "metrics": [
+        "embedding_mse_by_horizon",
+        "eef_error_m_by_horizon"
+      ]
+    }
+  ],
+  "evaluation": {
+    "paired_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "metrics": [
+      "classification_accuracy",
+      "task_success_rate",
+      "pick_success_rate",
+      "correct_basket_rate",
+      "trajectory_length_m_mean"
+    ],
+    "group_by": [
+      "method",
+      "checkpoint_id",
+      "eval_group"
+    ],
+    "no_ground_truth_category_in_policy_instruction": true
+  }
+}
